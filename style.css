@@ -1690,3 +1690,238 @@ a {
     border: 1.5px solid #333333;
 
     border-radius: 50
+right: -7px;
+    bottom: -5px;
+
+    background: #ffffff;
+}
+
+.search-glass::after {
+    content: "";
+
+    position: absolute;
+
+    width: 7px;
+    height: 1.5px;
+
+    background: #333333;
+
+    right: -5px;
+    bottom: -3px;
+
+    transform: rotate(45deg);
+}
+
+
+
+/* =========================================
+   WORKFLOW ICON
+========================================= */
+
+.workflow-icon {
+    height: 42px;
+}
+
+.workflow-node {
+    position: absolute;
+
+    width: 8px;
+    height: 8px;
+
+    border: 1.5px solid #222222;
+
+    border-radius: 2px;
+
+    background: #ffffff;
+}
+
+.top-node {
+    top: 1px;
+    left: 17px;
+}
+
+.bottom-left {
+    bottom: 1px;
+    left: 4px;
+}
+
+.bottom-center {
+    bottom: 1px;
+    left: 17px;
+}
+
+.bottom-right {
+    bottom: 1px;
+    right: 4px;
+}
+
+.workflow-line {
+    position: absolute;
+
+    width: 1px;
+
+    background: #333333;
+}
+
+.vertical-top {
+    height: 13px;
+
+    top: 9px;
+    left: 21px;
+}
+
+.left-down {
+    height: 14px;
+
+    top: 21px;
+    left: 8px;
+
+    transform: rotate(32deg);
+}
+
+.center-down {
+    height: 14px;
+
+    top: 21px;
+    left: 21px;
+}
+
+.right-down {
+    height: 14px;
+
+    top: 21px;
+    left: 34px;
+
+    transform: rotate(-32deg);
+}
+
+.workflow-horizontal {
+    position: absolute;
+
+    width: 27px;
+    height: 1px;
+
+    background: #333333;
+
+    left: 8px;
+    top: 21px;
+}
+
+
+
+/* =========================================
+   FEATURE TEXT
+========================================= */
+
+.feature-number {
+    display: block;
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+    color: #333333;
+
+    margin-bottom: 4px;
+}
+
+.feature-card h3 {
+    font-size: 12px;
+
+    line-height: 1.25;
+
+    font-weight: 700;
+
+    letter-spacing: -0.2px;
+
+    margin-bottom: 7px;
+}
+
+.feature-card p {
+    font-size: 8.5px;
+
+    line-height: 1.5;
+
+    color: #444444;
+}
+
+
+
+/* =========================================
+   DISCLAIMER
+========================================= */
+
+.technology-disclaimer {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    margin-top: 7px;
+
+    padding-left: 2px;
+}
+
+.disclaimer-symbol {
+    font-size: 11px;
+
+    color: #333333;
+}
+
+.technology-disclaimer p {
+    font-size: 8px;
+
+    line-height: 1.4;
+
+    color: #555555;
+}
+
+
+
+/* =========================================
+   PART 2 RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .technology-container {
+        grid-template-columns: 1fr;
+
+        max-width: 700px;
+    }
+
+    .problem-card,
+    .ai-technology-card {
+        min-height: auto;
+    }
+
+}
+
+
+
+@media (max-width: 600px) {
+
+    .technology-section {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .feature-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-card {
+        min-height: 145px;
+    }
+
+    .technology-heading h2,
+    .problem-content h2 {
+        font-size: 17px;
+    }
+
+    .problem-message {
+        padding: 12px;
+    }
+
+}
