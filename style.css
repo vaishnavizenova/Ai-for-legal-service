@@ -1210,3 +1210,483 @@ a {
     }
 
   }
+/* =========================================
+   PART 2
+   PROBLEM + AI TECHNOLOGY
+========================================= */
+
+.technology-section {
+    width: 100%;
+
+    background: #ffffff;
+
+    padding: 0 34px 25px;
+}
+
+.technology-container {
+    width: 100%;
+    max-width: 1310px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 31% 69%;
+
+    gap: 14px;
+
+    align-items: stretch;
+}
+
+
+
+/* =========================================
+   LEFT : PROBLEM CARD
+========================================= */
+
+.problem-card {
+    border: 1px solid #e5e5e5;
+
+    border-radius: 6px;
+
+    background: #ffffff;
+
+    padding: 17px 15px 15px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    min-height: 275px;
+}
+
+.problem-content h2 {
+    font-size: 18px;
+
+    line-height: 1.2;
+
+    letter-spacing: -0.5px;
+
+    font-weight: 700;
+
+    margin-bottom: 16px;
+}
+
+
+
+/* Problem list */
+
+.problem-list {
+    list-style: none;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 9px;
+}
+
+.problem-list li {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    font-size: 9.5px;
+
+    line-height: 1.35;
+
+    color: #333333;
+}
+
+.check-icon {
+    width: 12px;
+    height: 12px;
+
+    min-width: 12px;
+
+    border: 1px solid #555555;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 7px;
+
+    font-weight: 700;
+
+    color: #222222;
+}
+
+
+
+/* =========================================
+   PROBLEM MESSAGE
+========================================= */
+
+.problem-message {
+    width: 100%;
+
+    min-height: 62px;
+
+    background: #202020;
+
+    border-radius: 5px;
+
+    margin-top: 17px;
+
+    padding: 10px 12px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    color: #ffffff;
+}
+
+.message-icon {
+    width: 30px;
+
+    min-width: 30px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+
+/* Light bulb */
+
+.bulb {
+    position: relative;
+
+    width: 20px;
+    height: 23px;
+
+    border: 1.5px solid #ffffff;
+
+    border-radius: 50% 50% 45% 45%;
+
+    opacity: 0.9;
+}
+
+.bulb::before {
+    content: "";
+
+    position: absolute;
+
+    width: 8px;
+    height: 5px;
+
+    border-bottom: 1.5px solid #ffffff;
+
+    left: 4px;
+
+    bottom: -5px;
+}
+
+.bulb::after {
+    content: "";
+
+    position: absolute;
+
+    width: 2px;
+    height: 5px;
+
+    background: #ffffff;
+
+    left: 8px;
+
+    top: -6px;
+}
+
+.bulb span::before,
+.bulb span::after {
+    content: "";
+
+    position: absolute;
+
+    width: 5px;
+    height: 1px;
+
+    background: #ffffff;
+
+    top: 5px;
+}
+
+.bulb span::before {
+    left: -7px;
+
+    transform: rotate(-30deg);
+}
+
+.bulb span::after {
+    right: -7px;
+
+    transform: rotate(30deg);
+}
+
+
+
+.problem-message p {
+    font-size: 8.5px;
+
+    line-height: 1.5;
+
+    color: #ffffff;
+}
+
+
+
+/* =========================================
+   RIGHT : AI TECHNOLOGY CARD
+========================================= */
+
+.ai-technology-card {
+    border: 1px solid #e5e5e5;
+
+    border-radius: 6px;
+
+    background: #ffffff;
+
+    padding: 16px 15px 10px;
+
+    min-height: 275px;
+}
+
+
+
+/* Heading */
+
+.technology-heading h2 {
+    font-size: 18px;
+
+    line-height: 1.2;
+
+    letter-spacing: -0.45px;
+
+    font-weight: 700;
+
+    margin-bottom: 5px;
+}
+
+.technology-heading p {
+    max-width: 620px;
+
+    font-size: 9.5px;
+
+    line-height: 1.5;
+
+    color: #444444;
+
+    margin-bottom: 12px;
+}
+
+
+
+/* =========================================
+   FEATURE CARDS
+========================================= */
+
+.feature-cards {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 9px;
+}
+
+.feature-card {
+    min-height: 165px;
+
+    border: 1px solid #e8e8e8;
+
+    border-radius: 5px;
+
+    padding: 12px;
+
+    background: #ffffff;
+}
+
+
+
+/* =========================================
+   FEATURE ICONS
+========================================= */
+
+.feature-icon {
+    width: 42px;
+    height: 42px;
+
+    margin-bottom: 6px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+
+/* =========================================
+   INTELLIGENT ASSISTANCE ICON
+========================================= */
+
+.brain-circle {
+    position: relative;
+
+    width: 27px;
+    height: 32px;
+
+    border: 1.5px solid #333333;
+
+    border-radius: 48% 48% 45% 45%;
+}
+
+.brain-circle::before {
+    content: "";
+
+    position: absolute;
+
+    width: 2px;
+    height: 23px;
+
+    background: #333333;
+
+    left: 12px;
+
+    top: 4px;
+}
+
+.brain-circle::after {
+    content: "";
+
+    position: absolute;
+
+    width: 8px;
+    height: 8px;
+
+    border-left: 1.5px solid #333333;
+    border-bottom: 1.5px solid #333333;
+
+    left: -5px;
+    top: 10px;
+
+    transform: rotate(45deg);
+}
+
+.brain-line {
+    position: absolute;
+
+    width: 6px;
+    height: 6px;
+
+    border: 1px solid #333333;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+}
+
+.line-a {
+    left: -5px;
+    top: 3px;
+}
+
+.line-b {
+    right: -5px;
+    top: 7px;
+}
+
+.line-c {
+    left: -5px;
+    bottom: 5px;
+}
+
+.line-d {
+    right: -5px;
+    bottom: 3px;
+}
+
+
+
+/* =========================================
+   DOCUMENT INTELLIGENCE ICON
+========================================= */
+
+.document-symbol {
+    position: relative;
+
+    width: 25px;
+    height: 31px;
+
+    border: 1.5px solid #333333;
+
+    border-radius: 2px;
+}
+
+.document-fold {
+    position: absolute;
+
+    width: 8px;
+    height: 8px;
+
+    right: -1px;
+    top: -1px;
+
+    border-left: 1.5px solid #333333;
+    border-bottom: 1.5px solid #333333;
+
+    background: #ffffff;
+}
+
+.document-line {
+    position: absolute;
+
+    width: 11px;
+    height: 1px;
+
+    background: #555555;
+
+    left: 5px;
+    top: 12px;
+}
+
+.document-line:nth-of-type(2) {
+    top: 17px;
+}
+
+.document-line.small {
+    width: 7px;
+
+    top: 22px;
+}
+
+
+
+/* Search glass */
+
+.search-glass {
+    position: absolute;
+
+    width: 13px;
+    height: 13px;
+
+    border: 1.5px solid #333333;
+
+    border-radius: 50
